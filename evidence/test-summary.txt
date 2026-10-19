@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.ryleigh.module4.AuthenticationIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.72 s -- in com.ryleigh.module4.AuthenticationIntegrationTest

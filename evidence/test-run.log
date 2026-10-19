@@ -1,0 +1,94 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< com.ryleigh:module4-jwt-service >-------------------
+[INFO] Building Module 4 JWT Service 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.4.1:clean (default-clean) @ module4-jwt-service ---
+[INFO] Deleting C:\Users\rjane\Documents\Codex\2026-10-19\github-plugin-github-openai-curated-remote\outputs\module4-jwt-service\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ module4-jwt-service ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ module4-jwt-service ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 17 source files with javac [debug parameters release 21] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ module4-jwt-service ---
+[INFO] skip non existing resourceDirectory C:\Users\rjane\Documents\Codex\2026-10-19\github-plugin-github-openai-curated-remote\outputs\module4-jwt-service\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ module4-jwt-service ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug parameters release 21] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.5.4:test (default-test) @ module4-jwt-service ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.ryleigh.module4.AuthenticationIntegrationTest
+15:09:56.041 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.ryleigh.module4.AuthenticationIntegrationTest]: AuthenticationIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:09:56.235 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.ryleigh.module4.Module4Application for test class com.ryleigh.module4.AuthenticationIntegrationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.7)
+
+2026-10-19T15:09:56.874-04:00  INFO 19860 --- [module4-jwt-service] [           main] c.r.m.AuthenticationIntegrationTest      : Starting AuthenticationIntegrationTest using Java 21.0.8 with PID 19860 (started by rjane in C:\Users\rjane\Documents\Codex\2026-10-19\github-plugin-github-openai-curated-remote\outputs\module4-jwt-service)
+2026-10-19T15:09:56.875-04:00  INFO 19860 --- [module4-jwt-service] [           main] c.r.m.AuthenticationIntegrationTest      : No active profile set, falling back to 1 default profile: "default"
+2026-10-19T15:09:58.046-04:00  INFO 19860 --- [module4-jwt-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-19T15:09:58.131-04:00  INFO 19860 --- [module4-jwt-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 1 JPA repository interface.
+2026-10-19T15:09:58.948-04:00  INFO 19860 --- [module4-jwt-service] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-10-19T15:09:59.071-04:00  INFO 19860 --- [module4-jwt-service] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2026-10-19T15:09:59.148-04:00  INFO 19860 --- [module4-jwt-service] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-10-19T15:09:59.666-04:00  INFO 19860 --- [module4-jwt-service] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-19T15:09:59.716-04:00  INFO 19860 --- [module4-jwt-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-19T15:09:59.940-04:00  INFO 19860 --- [module4-jwt-service] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@48af5f38
+2026-10-19T15:09:59.942-04:00  INFO 19860 --- [module4-jwt-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-19T15:10:00.069-04:00  INFO 19860 --- [module4-jwt-service] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.39
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-19T15:10:01.086-04:00  INFO 19860 --- [module4-jwt-service] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-19T15:10:01.201-04:00  INFO 19860 --- [module4-jwt-service] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-19T15:10:03.817-04:00  INFO 19860 --- [module4-jwt-service] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-10-19T15:10:03.818-04:00  INFO 19860 --- [module4-jwt-service] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-10-19T15:10:03.819-04:00  INFO 19860 --- [module4-jwt-service] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-10-19T15:10:03.864-04:00  INFO 19860 --- [module4-jwt-service] [           main] c.r.m.AuthenticationIntegrationTest      : Started AuthenticationIntegrationTest in 7.42 seconds (process running for 8.973)
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+WARNING: A Java agent has been loaded dynamically (C:\Users\rjane\Documents\Codex\2026-10-19\github-plugin-github-openai-curated-remote\work\m2\net\bytebuddy\byte-buddy-agent\1.17.8\byte-buddy-agent-1.17.8.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.72 s -- in com.ryleigh.module4.AuthenticationIntegrationTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jar:3.4.2:jar (default-jar) @ module4-jwt-service ---
+[INFO] Building jar: C:\Users\rjane\Documents\Codex\2026-10-19\github-plugin-github-openai-curated-remote\outputs\module4-jwt-service\target\module4-jwt-service-1.0.0.jar
+[INFO] 
+[INFO] --- spring-boot:3.5.7:repackage (repackage) @ module4-jwt-service ---
+[INFO] Replacing main artifact C:\Users\rjane\Documents\Codex\2026-10-19\github-plugin-github-openai-curated-remote\outputs\module4-jwt-service\target\module4-jwt-service-1.0.0.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to C:\Users\rjane\Documents\Codex\2026-10-19\github-plugin-github-openai-curated-remote\outputs\module4-jwt-service\target\module4-jwt-service-1.0.0.jar.original
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  27.290 s
+[INFO] Finished at: 2026-10-19T15:10:15-04:00
+[INFO] ------------------------------------------------------------------------

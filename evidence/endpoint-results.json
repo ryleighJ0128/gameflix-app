@@ -1,0 +1,69 @@
+[ {
+  "method" : "POST",
+  "response" : {
+    "id" : "9e1a1a1d-3124-4b07-94f0-0394378b279e",
+    "username" : "module4_student_24",
+    "email" : "module4.evidence@example.com",
+    "createdAt" : "2026-10-19T19:10:12.467124Z"
+  },
+  "path" : "/api/auth/register",
+  "status" : 201,
+  "case" : "Successful registration"
+}, {
+  "method" : "POST",
+  "response" : {
+    "status" : 409,
+    "message" : "Email or username is already registered"
+  },
+  "path" : "/api/auth/register",
+  "status" : 409,
+  "case" : "Duplicate email rejected"
+}, {
+  "method" : "POST",
+  "response" : {
+    "accessToken" : "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJtb2R1bGU0LWp3dC1zZXJ2aWNlIiwic3ViIjoiOWUxYTFhMWQtMzEyNC00YjA3LTk0ZjAtMDM5NDM3OGIyNzllIiwiYXVkIjoibW9kdWxlNC1hcGkiLCJleHAiOjE3OTI0Mzc5MTMsImlhdCI6MTc5MjQzNzAxMywianRpIjoiYjY3MGE3OTYtMDc4Yi00ZTQ4LThmN2MtN2Y5YmM1ZDFkNjcxIn0.E9sLFDxCcjCKrK68fP_I4ek8DBjAounrT9CHEDpKDi8",
+    "tokenType" : "Bearer",
+    "expiresIn" : 900
+  },
+  "path" : "/api/auth/login",
+  "status" : 200,
+  "case" : "Successful login"
+}, {
+  "method" : "POST",
+  "response" : {
+    "status" : 401,
+    "message" : "Invalid email or password"
+  },
+  "path" : "/api/auth/login",
+  "status" : 401,
+  "case" : "Wrong password rejected"
+}, {
+  "method" : "GET",
+  "response" : {
+    "id" : "9e1a1a1d-3124-4b07-94f0-0394378b279e",
+    "username" : "module4_student_24",
+    "email" : "module4.evidence@example.com",
+    "createdAt" : "2026-10-19T19:10:12.467124Z"
+  },
+  "path" : "/api/users/me",
+  "status" : 200,
+  "case" : "Protected route with valid token"
+}, {
+  "method" : "GET",
+  "response" : {
+    "status" : 401,
+    "message" : "Authentication required or token invalid"
+  },
+  "path" : "/api/users/me",
+  "status" : 401,
+  "case" : "Protected route without token"
+}, {
+  "method" : "GET",
+  "response" : {
+    "status" : 401,
+    "message" : "Authentication required or token invalid"
+  },
+  "path" : "/api/users/me",
+  "status" : 401,
+  "case" : "Protected route with tampered token"
+} ]

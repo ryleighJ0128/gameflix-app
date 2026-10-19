@@ -1,0 +1,12 @@
+Actual MySQL query through JDBC after the test registration
+Captured UTC: 2026-10-19T19:10:13.464523200Z
+MySQL version: 8.0.39
+Database: module4_jwt_test
+
+SELECT id, email, password FROM users;
+
+id: 9e1a1a1d-3124-4b07-94f0-0394378b279e
+email: module4.evidence@example.com
+password: {bcrypt}$2a$12$ihnUUpDPAw4Txp1ZdQIedO.p4koHangkA6/nMtJFa8Lmg6UN1gVxa
+
+The password column contains the 68-character {bcrypt} hash.

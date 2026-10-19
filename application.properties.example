@@ -1,0 +1,9 @@
+# Copy this file to application-local.properties (which Git ignores), then replace
+# the placeholders. Run from the project directory. Never commit the local file.
+spring.datasource.url=jdbc:mysql://localhost:3306/module4_jwt?serverTimezone=UTC
+spring.datasource.username=YOUR_MYSQL_USERNAME
+spring.datasource.password=YOUR_MYSQL_PASSWORD
+# Generate at least 32 cryptographically random bytes and Base64-encode them.
+# The application deliberately refuses missing, invalid, or shorter keys.
+app.jwt.secret-base64=YOUR_RANDOM_BASE64_SECRET
+app.cors.allowed-origin=http://localhost:3000
