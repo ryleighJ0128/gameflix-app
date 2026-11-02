@@ -1,0 +1,14 @@
+.git
+.idea
+.vscode
+.env
+.env.*
+application-local.properties
+**/application-local.properties
+*.log
+module5-evidence
+evidence
+docs
+.github
+scripts
+.DS_Store
